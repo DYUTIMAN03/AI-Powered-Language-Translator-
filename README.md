@@ -38,20 +38,33 @@ pip install -r requirements.txt
 python app.py
 
 
-## 🖼️ Project Screenshots
+## ✨ Project Snapshots
 
-### 🔤 Input Interface
-<img src="images/1.png" alt="Input" width="500"/>
+<table style="border-collapse: separate; border-spacing: 15px;">
+  <tr>
+    <td align="center">
+      <img src="images/1.png" alt="Translator Input" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+      <sub><b>🌐 Input Interface</b></sub>
+    </td>
+    <td align="center">
+      <img src="images/2.jpg" alt="Language Selection" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+      <sub><b>🈯 Language Selection</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/3.jpg" alt="Translated Output" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+      <sub><b>✅ Translated Output</b></sub>
+    </td>
+    <td align="center">
+      <img src="images/4.jpg" alt="Success Message" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+      <sub><b>🚀 Confirmation</b></sub>
+    </td>
+  </tr>
+</table>
 
-### 🌍 Language Selection
-<img src="images/2.jpg" alt="Language Selection" width="500"/>
-
-### 🔄 Translation Output
-<img src="images/3.jpg" alt="Output" width="500"/>
-
-### ✅ Success Message
-<img src="images/4.jpg" alt="Success" width="500"/>
 
 
 🙋‍♂️ Author
+
 Developed and maintained by Dyutiman Bharadwaj

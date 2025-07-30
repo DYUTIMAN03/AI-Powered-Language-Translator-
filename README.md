@@ -40,32 +40,30 @@ python app.py
 
 ## ✨ Project Snapshots
 
-<div align="center">
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+## ✨ Project Snapshots
 
-    <div style="text-align: center;">
-      <img src="images/1.png" alt="Input Interface" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/1.png" alt="Input Interface" width="300"><br/>
       <sub><b>🌐 Input Interface</b></sub>
-    </div>
-
-    <div style="text-align: center;">
-      <img src="images/2.jpg" alt="Language Selection" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
+    </td>
+    <td align="center">
+      <img src="images/2.jpg" alt="Language Selection" width="300"><br/>
       <sub><b>🈯 Language Selection</b></sub>
-    </div>
-
-    <div style="text-align: center;">
-      <img src="images/3.jpg" alt="Translated Output" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/3.jpg" alt="Translated Output" width="300"><br/>
       <sub><b>✅ Translated Output</b></sub>
-    </div>
-
-    <div style="text-align: center;">
-      <img src="images/4.jpg" alt="Confirmation" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
+    </td>
+    <td align="center">
+      <img src="images/4.jpg" alt="Confirmation" width="300"><br/>
       <sub><b>🚀 Confirmation</b></sub>
-    </div>
-
-  </div>
-</div>
-
+    </td>
+  </tr>
+</table>
 
 
 

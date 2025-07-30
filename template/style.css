@@ -1,0 +1,695 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+*::selection {
+    color: #ace022;
+    background-color: white;
+
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+    background-color: #ace022;
+    /* background: linear-gradient(to right#ace022,red); */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 50;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #95c11e;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+/* #cursor-blur {
+    height: 400px;
+    width: 400px;
+    background-color: rgba(150, 193, 30, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+
+} */
+
+#nav {
+    height: 150px;
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    gap: 50px;
+    position: fixed;
+    z-index: 99;
+}
+
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 500px;
+}
+#nav  ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    
+}
+#nav ul li {
+    text-transform: uppercase;
+    font-weight: 500px;
+    padding: 50px;
+}
+#nav ul li a{
+    text-decoration: none;
+}
+
+#nav img {
+    height: 90px;
+    width: 90px;
+    border-radius:100px;
+
+}
+
+.background{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+
+#page1 h1 {
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+}
+
+#page1 h1::before {
+    content: "Speak, Share, Connect";
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: -5px -webkit-text-stroke 2px #95c11e;
+    z-index: -1;
+
+}
+
+#page1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#page1 p {
+    font-size: 22px;
+    font-weight: 500;
+    width: 40%;
+}
+
+#page1 #arrow {
+    height: 250px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid #95c11e;
+    position: absolute;
+    display: flex;
+    left: -2%;
+    bottom: 0%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+
+#page1 #arrow i {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+#page1 #arrow:hover {
+    scale: 0.4;
+    background-color: #ace022;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+
+}
+
+#scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: gilroy;
+    -webkit-text-stroke: 2px #95c11e;
+    color: transparent;
+    transition: all linear 0.5s;
+}
+#scroller h4  pre{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 900;
+    font-family: gilroy;
+    -webkit-text-stroke: 2px #95c11e;
+    color: transparent;
+    transition: all linear 0.5s;
+}
+#scroller h4 pre:hover {
+    color: #95c11e;
+}
+#scroller h4:hover {
+    color: #95c11e;
+}
+button {
+    padding: 12px 24px;
+    background: #95c11e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+
+#voiceInputButton {
+    margin-top: 10px;
+    background: #4CAF50; /* Green background */
+    color: white;
+}
+
+#voiceInputButton:hover {
+    background: #45a049;
+}
+
+#voiceOutputButton {
+    margin-top: 10px;
+    background: #FF9800; /* Orange background */
+    color: white;
+}
+
+#voiceOutputButton:hover {
+    background: #FB8C00;
+}
+#container {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+.translation-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input textarea styling */
+#sourceText {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    background: #fff;
+}
+
+#sourceText:focus {
+    outline: none;
+    border-color: #333f4c;
+    background: #f8f9ff;
+}
+
+/* Output textarea styling */
+#targetText {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+    font-size: 16px;
+    resize: none;
+    background: #f7f9fc;
+    color: #2c3e50;
+}
+
+/* Source language select area */
+.translation-box:first-child .language-select {
+    background: #e8f4ff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #cce4ff;
+}
+
+/* Target language select area */
+.translation-box:last-child .language-select {
+    background: #fff3e6;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ffe4cc;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+
+select:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 12px 24px;
+    background: #95c11e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+button:hover {
+    background: #357abd;
+}
+
+.label {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+.translation-box {
+    position: relative;
+    z-index: 10;
+}
+textarea, select {
+    background-color: rgb(147, 228, 76);
+    /* border: 2px solid red; */
+}
+#sourceText {
+    width: 100%; /* Make it stretch to fit its container */
+    /* height: 100px;  */
+    padding: 10px; /* Add some space inside the textarea */
+    font-size: 16px; /* Readable font size */
+    color: #333; /* Ensure text is visible */
+    border: 1px solid #555; /* Add a border for better visibility */
+    box-sizing: border-box; /* Ensures padding is included in dimensions */
+}
+#targetText {
+    width: 100%;
+    /* height: 100px; */
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #555;
+    box-sizing: border-box;
+}
+
+/* Different colors for source and target labels */
+.translation-box:first-child .label {
+    color: #2b6cb0;
+}
+
+.translation-box:last-child .label {
+    color: #c05621;
+}
+
+#about-us {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+    z-index: 10;
+}
+
+#about-us img {
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#about-us-in {
+    width: 50%;
+    text-align: center;
+}
+
+#about-us-in h3 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 40px;
+
+}
+
+#about-us-in p {
+    line-height: 26px;
+    font-size: 20px;
+}
+
+#cards-container {
+    /* background-color: red; */
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+.card {
+    height: 80%;
+    width: 24%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    transition: all ease 0.6s;
+
+}
+
+#card1 {
+    background-image: url(assets/HTransformers.png);
+}
+
+#card2 {
+    background-image: url(assets/Tokenizers.jpg);
+}
+
+#card3 {
+    background-image: url(assets/AutoModelForSeq2SeqLM.webp);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding: 30px;
+    padding-top: 100px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    border-radius: 20px;
+}
+
+.overlay h4 {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    color: black;
+    font-size: 18px;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#green-div {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red;*/
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
+}
+
+#green-div h4 {
+    width: 40%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    color: black;
+}
+
+#green-div img {
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+
+#page-3 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#page-3>p {
+    font-size: 35px;
+    font-weight: 700;
+    width: 60%;
+    text-align: center;
+    line-height: 45px;
+}
+
+#page-3 img {
+    position: absolute;
+    height: 60px;
+
+}
+
+#page-3 #colon1 {
+    left: 15%;
+    top: 25%;
+}
+
+#page-3 #colon2 {
+    bottom: 30%;
+    right: 15%;
+}
+
+#page4 {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+}
+
+.elem {
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.elem h2 {
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    display: flex;
+    color: #000;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    font-size: 2vw;
+    position: absolute;
+    z-index: 10;
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;
+}
+
+.elem:hover h2 {
+    color: white;
+    background-color: transparent;
+}
+
+.elem:hover img {
+    scale: 1.1;
+}
+
+#page4 h1 {
+    font-size: 6.4vw;
+    position: absolute;
+    top: -15%;
+    font-weight: 900;
+    font-family: gilroy;
+    color: #000;
+    -webkit-text-stroke: 2px #fff;
+}
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+}
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(to left bottom, #119f3a 0%, #a3d421 80%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6.5vw;
+    padding: 0 100px;
+}
+
+
+#footer>img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+    
+}
+
+#f1 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 80px;
+    
+}
+
+#f1,#f2,#f3,#f4 {
+    width: fit-content;
+    position: relative;
+    z-index: 99;
+  
+}
+
+#f2 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+#f3 h3 {
+    font-size: 1.6vw;
+    white-space: nowrap;
+    text-transform: lowercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+#f4 h4 {
+    font-size: 1vw;
+    white-space: nowrap;
+    line-height-step: 20px;
+    color: #000;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

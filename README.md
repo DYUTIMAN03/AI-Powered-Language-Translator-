@@ -40,8 +40,6 @@ python app.py
 
 ## ✨ Project Snapshots
 
-## ✨ Project Snapshots
-
 <table>
   <tr>
     <td align="center">

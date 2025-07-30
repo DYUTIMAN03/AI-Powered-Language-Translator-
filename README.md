@@ -40,3 +40,21 @@ python app.py
 🙋‍♂️ Author
 Developed and maintained by Dyutiman Bharadwaj
 
+
+## 🖼️ Project Screenshots
+
+### 🔤 Input Interface
+![Input](images/1.png)
+
+### 🌍 Language Selection
+![Language Selection](images/2.png)
+
+### 🔄 Translation Output
+![Output](images/3.png)
+
+### ✅ Success Message
+![Success](images/4.png)
+
+
+
+

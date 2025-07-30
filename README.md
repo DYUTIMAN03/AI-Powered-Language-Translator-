@@ -40,28 +40,32 @@ python app.py
 
 ## ✨ Project Snapshots
 
-<table style="border-collapse: separate; border-spacing: 15px;">
-  <tr>
-    <td align="center">
-      <img src="images/1.png" alt="Translator Input" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+<div align="center">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+    <div style="text-align: center;">
+      <img src="images/1.png" alt="Input Interface" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
       <sub><b>🌐 Input Interface</b></sub>
-    </td>
-    <td align="center">
-      <img src="images/2.jpg" alt="Language Selection" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="images/2.jpg" alt="Language Selection" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
       <sub><b>🈯 Language Selection</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="images/3.jpg" alt="Translated Output" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="images/3.jpg" alt="Translated Output" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
       <sub><b>✅ Translated Output</b></sub>
-    </td>
-    <td align="center">
-      <img src="images/4.jpg" alt="Success Message" width="300" style="border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/><br/>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="images/4.jpg" alt="Confirmation" width="300" style="border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"/><br/>
       <sub><b>🚀 Confirmation</b></sub>
-    </td>
-  </tr>
-</table>
+    </div>
+
+  </div>
+</div>
+
 
 
 

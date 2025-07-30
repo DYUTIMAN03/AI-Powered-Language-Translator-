@@ -1,44 +1,42 @@
-<h2 style="color: #4CAF50;">Generative AI Language Translator</h2>
+# 🌍 AI-Powered Language Translator
 
-## Project Overview
-This is a language translation project built using the **NLLB (No Language Left Behind)** model from Hugging Face. The NLLB model is a state-of-the-art transformer model capable of translating between over **200 languages**, allowing for highly accurate and multilingual text translation. 
+This project is a cutting-edge language translation web application built using Meta’s No Language Left Behind (NLLB) model, accessed via Hugging Face. The NLLB model is a state-of-the-art transformer designed to translate between over 200 languages with high accuracy. By leveraging this powerful multilingual model, the application delivers fast, reliable, and context-aware translations through a clean, user-friendly interface.
 
-## Model Details
-- **Model Used**: NLLB (No Language Left Behind)
-- **Supported Languages**: Over 200 languages
-- **Source**: [Hugging Face Model Hub](https://huggingface.co/)
+## 🔍 Overview
 
-## Features
-- **Multilingual Support**: Translate text between more than 200 languages.
-- **User-Friendly Interface**: Easy-to-use interface for seamless translation.
+This project leverages Meta’s [NLLB model](https://huggingface.co/facebook/nllb-200-distilled-600M) from Hugging Face to perform **real-time multilingual translations** in a lightweight web interface.
 
+## ✨ Features
 
-This repository contains the code for the **Generative AI Language Translator** project. It leverages advanced AI models to provide language translation functionality.
+- 🌐 Translate between 200+ languages
+- ⚡ Fast and accurate translation with state-of-the-art transformer model
+- 🖥️ Simple web-based UI built using HTML/CSS/JS
+- 🐍 Python backend using Flask
 
-## <span style="color: #2196F3;">Getting Started</span>
+## 🧠 Model Info
 
-To get started with this project, you need to set up the environment. The project uses Python and virtual environments to manage dependencies. Here's how you can set up the project and the environment on your local machine:
+- **Model:** NLLB-200 (distilled)
+- **Framework:** Hugging Face Transformers
+- **Source:** [Hugging Face Model Hub](https://huggingface.co/facebook/nllb-200-distilled-600M)
 
-### <span style="color: #FF5722;">1. Clone the Repository</span>
-git clone https://github.com/Adiitya2328/Generative-A-I-Language-Translator.git
-cd Generative-A-I-Language-Translator
-### <span style="color: #FF5722;">2. Set Up the Virtual Environment</span>
-Note: The .venv folder, which contains the virtual environment and all project dependencies, has been excluded from version control via .gitignore to avoid uploading large files to GitHub.
+## 🚀 Getting Started
 
-Instead, the list of required dependencies is stored in the requirements.txt file.
+1. Clone the Repository
+git clone https://github.com/DYUTIMAN03/AI-Powered-Language-Translator-.git
+cd AI-Powered-Language-Translator-
 
-Steps to recreate the virtual environment:
-Create the virtual environment:
-
-Run the following command to create a new virtual environment:
+2. Create a Virtual Environment
 python -m venv .venv
 
-Activate the virtual environment:
-On Windows:
-      .\.venv\Scripts\activate
+3. Activate the Environment on Windows:
+.venv\Scripts\activate
 
-### <span style="color: #FF5722;">3. Install the Required Dependencies</span>
-Once the virtual environment is activated, install the dependencies from the requirements.txt file using pip:
-
+4. Install Dependencies
 pip install -r requirements.txt
+
+5. Run the App
+python app.py
+
+🙋‍♂️ Author
+Developed and maintained by Dyutiman Bharadwaj
 

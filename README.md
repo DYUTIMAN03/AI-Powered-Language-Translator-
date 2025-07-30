@@ -37,24 +37,21 @@ pip install -r requirements.txt
 5. Run the App
 python app.py
 
-🙋‍♂️ Author
-Developed and maintained by Dyutiman Bharadwaj
-
 
 ## 🖼️ Project Screenshots
 
 ### 🔤 Input Interface
-![Input](images/1.png)
+<img src="images/1.png" alt="Input" width="500"/>
 
 ### 🌍 Language Selection
-![Language Selection](images/2.jpg)
+<img src="images/2.jpg" alt="Language Selection" width="500"/>
 
 ### 🔄 Translation Output
-![Output](images/3.jpg)
+<img src="images/3.jpg" alt="Output" width="500"/>
 
 ### ✅ Success Message
-![Success](images/4.jpg)
+<img src="images/4.jpg" alt="Success" width="500"/>
 
 
-
-
+🙋‍♂️ Author
+Developed and maintained by Dyutiman Bharadwaj

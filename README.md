@@ -47,13 +47,13 @@ Developed and maintained by Dyutiman Bharadwaj
 ![Input](images/1.png)
 
 ### 🌍 Language Selection
-![Language Selection](images/2.png)
+![Language Selection](images/2.jpg)
 
 ### 🔄 Translation Output
-![Output](images/3.png)
+![Output](images/3.jpg)
 
 ### ✅ Success Message
-![Success](images/4.png)
+![Success](images/4.jpg)
 
 
 
